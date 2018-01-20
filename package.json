@@ -11,7 +11,7 @@
     "request": "^2.83.0"
   },
   "config": {
-    "ARTISTNAME": "Virkelig",
+    "ARTISTNAME": "Atlanter",
     "S3URL": "s3://virkeligband",
     "CLOUDFRONTID": "ET2LPRHVTYOK",
     "APIURL": "https://jansenrecords.com/api"

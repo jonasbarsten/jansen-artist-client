@@ -8,7 +8,8 @@ export default class Home extends Component {
   constructor () {
     super ();
     this.state = {
-      artist: {}
+      artist: {},
+      releases: {}
     }
   }
 
@@ -21,6 +22,15 @@ export default class Home extends Component {
         this.setState({
           artist: JSON.parse(body)
         });
+
+        request(`${apiUrl}/releasesByArtistId/${this.state.artist._id}`, (error, response, body) => {
+          if (body) {
+            this.setState({
+              releases: JSON.parse(body)
+            });
+          }
+        });
+
       };
     });
   }
@@ -28,6 +38,7 @@ export default class Home extends Component {
   render() {
 
     const artist = this.state.artist;
+    const releases = this.state.releases;
 
     if (!artist) {
       return <h4>Loading ...</h4>
@@ -35,6 +46,10 @@ export default class Home extends Component {
 
     if (artist) {
       console.log(artist);
+    }
+
+    if (releases) {
+      console.log(releases);
     }
 
     return (

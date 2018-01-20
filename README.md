@@ -8,6 +8,7 @@ https://deliciousbrains.com/wp-offload-s3/doc/custom-domain-https-cloudfront/
 
 
 remember to whitelist new domain on the api server
+
 remember to update config field in package.json
 
 ------------------
