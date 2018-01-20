@@ -1,3 +1,22 @@
+deploy: 
+
+aws s3 sync build s3://bucket-name --delete
+
+
+flush cloudfront buffer:
+
+aws cloudfront create-invalidation --distribution-id=cloudfront-id --paths /
+
+
+custom domain on cloudfront:
+
+https://deliciousbrains.com/wp-offload-s3/doc/custom-domain-https-cloudfront/
+
+
+remember to whitelist new domain on the api server
+
+------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

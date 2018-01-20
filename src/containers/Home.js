@@ -13,13 +13,15 @@ export default class Home extends Component {
   }
 
   componentDidMount () {
-    request('https://jansenrecords.com/api/artist/bDiXMrrSjJAZ44nnt', (error, response, body) => {
+    const apiUrl = process.env.REACT_APP_APIURL;
+    const artistName = process.env.REACT_APP_ARTIST_NAME;
+
+    request(`${apiUrl}/artistByName/${artistName}`, (error, response, body) => {
       if (body) {
         this.setState({
           artist: JSON.parse(body)
         });
       };
-      
     });
   }
 
