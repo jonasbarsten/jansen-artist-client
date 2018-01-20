@@ -10,10 +10,19 @@
     "react-scripts": "1.1.0",
     "request": "^2.83.0"
   },
+  "config": {
+    "ARTISTNAME": "Virkelig",
+    "S3URL": "s3://virkeligband",
+    "CLOUDFRONTID": "ET2LPRHVTYOK",
+    "APIURL": "https://jansenrecords.com/api"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn build",
+    "deploy": "aws s3 sync build/ ${npm_package_config_S3URL} --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id ${npm_package_config_CLOUDFRONTID} --paths '/*'",
     "eject": "react-scripts eject"
   }
 }

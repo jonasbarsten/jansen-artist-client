@@ -1,12 +1,6 @@
-deploy: 
+deploy:
 
-aws s3 sync build s3://bucket-name --delete
-
-
-flush cloudfront buffer:
-
-aws cloudfront create-invalidation --distribution-id=cloudfront-id --paths /
-
+yarn deploy
 
 custom domain on cloudfront:
 
@@ -14,6 +8,7 @@ https://deliciousbrains.com/wp-offload-s3/doc/custom-domain-https-cloudfront/
 
 
 remember to whitelist new domain on the api server
+remember to update config field in package.json
 
 ------------------
 
