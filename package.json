@@ -1,5 +1,6 @@
 {
   "name": "jansen-client",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +12,7 @@
     "request": "^2.83.0"
   },
   "config": {
-    "ARTISTNAME": "Atlanter",
+    "ARTISTNAME": "Virkelig",
     "S3URL": "s3://virkeligband",
     "CLOUDFRONTID": "ET2LPRHVTYOK",
     "APIURL": "https://jansenrecords.com/api"

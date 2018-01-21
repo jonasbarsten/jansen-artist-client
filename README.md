@@ -11,6 +11,8 @@ remember to whitelist new domain on the api server
 
 remember to update config field in package.json
 
+remember to redirect http to https in cloudfront under behaviour
+
 ------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
