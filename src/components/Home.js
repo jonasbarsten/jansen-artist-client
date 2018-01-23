@@ -8,8 +8,6 @@ import ReleaseCard from './releases/ReleaseCard';
 import BarstenViewer from './utilities/BarstenViewer';
 import ArtistEvents from './events/ArtistEvents';
 
-import "./Home.css";
-
 class Home extends Component {
 
   constructor () {
@@ -21,13 +19,14 @@ class Home extends Component {
   }
 
   componentDidMount () {
+
     const apiUrl = process.env.REACT_APP_APIURL;
-    const artistName = process.env.REACT_APP_ARTIST_NAME;
+    // const artistName = process.env.REACT_APP_ARTIST_NAME;
 
     // TODO: Use fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     // TODO: Use await: https://davidwalsh.name/async-await
 
-    request(`${apiUrl}/artistByName/${artistName}`, (error, response, body) => {
+    request(`${apiUrl}/artistByName/${this.props.artist}`, (error, response, body) => {
       if (body) {
         this.setState({
           artist: JSON.parse(body)
