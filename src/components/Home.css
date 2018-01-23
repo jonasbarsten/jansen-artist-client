@@ -1,11 +1,13 @@
-@font-face {
+/*@font-face {
     font-family: buenosAires;
     src: url(/fonts/BuenosAires-Medium.ttf);
-}
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 body {
-	font-family: buenosAires;
-	background-color: #C0DAE8;
+	font-family: 'Work Sans', sans-serif;
+	background-color: white;
 }
 
 a, a:hover, a:visited {
@@ -14,8 +16,12 @@ a, a:hover, a:visited {
 }
 
 hr {
-	border: 6px solid #C0DAE8;
+	border: 6px solid rgb(41,72,90);
 	margin: 40px 0px;
+}
+
+.hover {
+	cursor: pointer;
 }
 
 .spacer-50 {
@@ -206,7 +212,7 @@ hr {
 	margin: 0 auto;
 	min-height: 50px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	border: solid 8px #1C4DA1;
+	border: solid 8px rgb(100,90,83);
 }
 
 /*.artist-single-content, .release-single-content {
@@ -226,7 +232,7 @@ hr {
 }
 
 .artist-single-content h2 {
-	margin: 80px;
+	margin: 80px 0;
 }
 
 
@@ -234,14 +240,14 @@ hr {
 .artist-single-content:before, 
 .release-single-content:before,
 .page-single-content:before {
-  content: " ";
+/*  content: " ";
   position: absolute;
   z-index: -1;
   top: 3px;
   left: 3px;
   right: 3px;
   bottom: 3px;
-  border: 8px solid #1C4DA1;
+  border: 8px solid #1C4DA1;*/
 }
 
 /*.artist-single-releases {

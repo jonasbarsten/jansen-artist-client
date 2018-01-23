@@ -101,7 +101,7 @@ class Home extends Component {
                 updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false 
               >
                 {releases.map((release) => {
-                  return <ReleaseCard key={release._id} release={release} onClick={() => {this.props.history.push('/releases/' + release._id);}}/>
+                  return <ReleaseCard key={release._id} release={release} onClick={() => {this.props.history.push('/release/' + release._id);}}/>
                 })}
               </Masonry>
 

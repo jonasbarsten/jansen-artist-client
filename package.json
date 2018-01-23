@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "vivus": "^0.4.3"
   },
   "config": {
     "ARTISTNAME": "Virkelig",
