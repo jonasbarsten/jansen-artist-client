@@ -24,7 +24,7 @@
     "test": "react-scripts test --env=jsdom",
     "predeploy": "yarn build",
     "deploy": "aws s3 sync build/ ${npm_package_config_S3URL} --delete",
-    "postdeploy": "APIURL=${npm_package_config_APIURL} node test.js",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id ${npm_package_config_CLOUDFRONTID} --paths '/*'",
     "eject": "react-scripts eject",
     "//": {
       "postdeploy": "aws cloudfront create-invalidation --distribution-id ${npm_package_config_CLOUDFRONTID} --paths '/*'"
