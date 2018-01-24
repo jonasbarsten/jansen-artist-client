@@ -52,7 +52,7 @@ export default class ArtistEvents extends Component {
 				if (this.props.scope === "past") {
 
 					thisEvent = 
-						<div key={event.id} className="col-sm-6">
+						<div key={event.id} className="col-sm-6 hover">
 							<div className="row event-row" onClick={onClick}>
 								<div className="text-uppercase text-center">
 									{event.start.date} @ {location}
@@ -65,7 +65,7 @@ export default class ArtistEvents extends Component {
 
 					thisEvent = 
 
-						<div key={event.id} className="row event-row" onClick={onClick}>
+						<div key={event.id} className="row event-row hover" onClick={onClick}>
 							<div className="col-xs-4 text-uppercase">
 								{event.start.date}
 							</div>

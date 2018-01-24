@@ -9,29 +9,29 @@ class App extends Component {
 
 	render() {
 
-			const host = window.location.host;
+		const host = window.location.host;
 
-			const artistWebsites = {
-			  'localhost:3000': 'Virkelig',
-			  'www.virkeligband.no': 'Virkelig',
-			  'virkelig.feiging.no': 'Virkelig'
-			};
+		const artistWebsites = {
+		  'localhost:3000': 'Virkelig',
+		  'www.virkeligband.no': 'Virkelig',
+		  'virkelig.feiging.no': 'Virkelig'
+		};
 
-			const artist = artistWebsites[host];
+		const artist = artistWebsites[host];
 
-			const artistLower = _.toLower(artist);
+		const artistLower = _.toLower(artist);
 
-	    return (
-	      <div>
-	      	<Helmet>
-	      		<title>{artist.name}</title>
-	      		<link rel="stylesheet" href={`./styles/${artistLower}.css`} />
-	      	</Helmet>
-	        <FrontNav />
-	        <Routes artist={artist} />
-	      </div>
-	    );
-	  }
-	}
+    return (
+      <div>
+      	<Helmet>
+      		<title>{artist.name}</title>
+      		<link rel="stylesheet" href={`./styles/${artistLower}.css`} />
+      	</Helmet>
+        <FrontNav />
+        <Routes artist={artist} />
+      </div>
+    );
+	 }
+}
 
 export default App;
