@@ -45,7 +45,6 @@ hr {
 	padding-left: 0;
 }
 
-/* centered columns styles */
 .row-centered {
     text-align: center;
 }
@@ -57,10 +56,6 @@ hr {
     /* inline-block space fix */
     margin-right: -4px;
 }
-
-/*#footer-container {
-
-}*/
 
 #back-button {
 	position: fixed;
@@ -75,95 +70,9 @@ hr {
 	height: 100px;
 }
 
-/*#footer {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.friend-sites {
-	margin-top: 5px;
-}
-
-.friend-sites a {
-	margin-right: 10px;
-	text-transform: uppercase;
-}
-
-.friend-sites a:hover {
-	text-decoration: underline;
-}*/
-
-/*.navbar {
-	border-radius: 0;
-	border: none;
-}
-
-.navbar-default {
-	background-color: #7ad2ff;
-}
-
-.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: white;
-	border: none;
-	border-radius: 0;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: black;
-}
-
-.navbar-default .navbar-nav > li > a {
-	text-transform: uppercase;
-	color: black;
-}*/
-
-/*.active {
-	color: #555;
-    background-color: #e7e7e7;
-}*/
-
-/*.navbar-default .navbar-collapse {
-	border-color: white;
-}
-
-.navbar-brand img {
-	padding-top: 2px;
-}
-
-#admin-nav .navbar-brand {
-	padding: 4px 4px 4px 15px;
-}
-
-#login-buttons {
-	padding: 15px;
-}*/
-
 #home-wrapper {
 	padding-top: 60px;
 }
-
-/*#home-menu {
-	padding-top: 60px;
-}
-
-#home-menu span {
-	text-transform: uppercase;
-	text-align: center;
-	padding: 15px 0 15px 0;
-	background-color: #7ad2ff;
-}
-
-#home-menu span:hover {
-	background-color: #68ccff;
-}
-
-.home-logo {
-	max-width: 200px;
-}
-
-.social-icons {
-	text-align: center;
-}*/
 
 .artist-card, .release-card {
 	text-align: center;
@@ -176,10 +85,6 @@ hr {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     cursor: pointer;
 }
-
-/*.artist-card:hover {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}*/
 
 .artist-card img {
 	object-fit: cover;
@@ -214,18 +119,6 @@ hr {
 	border: solid 8px rgb(100,90,83);
 }
 
-/*.artist-single-content, .release-single-content {
-	padding: 30px;
-	position: relative;
-	z-index: 10;
-	max-width: 700px;
-	margin-top: -50px;
-	background-color: white;
-	min-width: 100%;
-	min-height: 50px;
-	border: solid 8px #1C4DA1;
-}*/
-
 .artist-single-content {
 	margin-top: -50px;
 }
@@ -234,23 +127,9 @@ hr {
 	margin: 80px 0;
 }
 
-/*.artist-single-releases {
-	margin-top: 30px;
-}*/
-
-/*.deleteArtistField {
-	min-width: 100%;
-	padding: 10px 0 10px 0;
-	background-color: red;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-}*/
-
 .release-banner img {
 	min-width: 100%;
 	margin: auto;
-
 }
 
 .link-list {
@@ -285,8 +164,13 @@ hr {
 }
 
 .event-row {
-	padding: 10px;
-	font-size: 14px;
+	padding: 3px 20px 3px 20px;
+	font-size: 10px;
+    font-size: 2.8vw;
+}
+
+.event-row div {
+	padding: 0px 5px 0px 5px;
 }
 
 .songkick-logo {
@@ -295,6 +179,16 @@ hr {
 
 #mobile-ekstra-menu-item i {
 	min-height: 17px;
+}
+
+.subscribe-container {
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.subscribe-container:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -317,8 +211,20 @@ hr {
 		min-width: 300px;
 	}
 
+	.event-row {
+		padding: 10px;
+		font-size: 14px;
+	    /*font-size: 2vw;*/
+	}
+
+	.event-row div {
+		padding: 0px 20px 0px 20px;
+	}
+
 	.event-row:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		cursor: pointer;
+		/*background-color: #86b3ce;*/
 	}
 }
 

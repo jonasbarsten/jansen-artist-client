@@ -15,7 +15,7 @@
   },
   "config": {
     "S3URL": "s3://jansen-artist-client",
-    "CLOUDFRONTID": "ET2LPRHVTYOK",
+    "CLOUDFRONTID": "E191BJU0HLBHVP",
     "APIURL": "https://jansenrecords.com/api"
   },
   "scripts": {

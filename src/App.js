@@ -13,8 +13,11 @@ class App extends Component {
 
 		const artistWebsites = {
 		  'localhost:3000': 'Virkelig',
+		  'localhost:5000': 'Virkelig',
 		  'www.virkeligband.no': 'Virkelig',
-		  'virkelig.feiging.no': 'Virkelig'
+		  'www.deathbyungabunga.no': 'Death By Unga Bunga',
+		  'www.hajk.no': 'Hajk',
+		  'www.electriceye.no': 'Electric Eye'
 		};
 
 		const artist = artistWebsites[host];
@@ -24,8 +27,8 @@ class App extends Component {
     return (
       <div>
       	<Helmet>
-      		<title>{artist.name}</title>
-      		<link rel="stylesheet" href={`./styles/${artistLower}.css`} />
+      		<title>{artist}</title>
+      		<link rel="stylesheet" href={`/styles/${artistLower}.css`} />
       	</Helmet>
         <FrontNav />
         <Routes artist={artist} />

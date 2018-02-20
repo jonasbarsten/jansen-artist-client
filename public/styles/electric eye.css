@@ -1,0 +1,18 @@
+@font-face {
+    font-family: buenosAires;
+    src: url(/fonts/BuenosAires-Medium.ttf);
+}
+
+body {
+	font-family: buenosAires;
+}
+
+hr {
+	border: 6px solid rgb(71,56,53);
+}
+
+.artist-single-content, 
+.release-single-content, 
+.page-single-content {
+	border: solid 10px rgb(204,68,178);
+}
