@@ -12,7 +12,7 @@ class App extends Component {
 		const host = window.location.host;
 
 		const artistWebsites = {
-		  'localhost:3000': 'Virkelig',
+		  'localhost:3000': 'Death By Unga Bunga',
 		  'localhost:5000': 'Virkelig',
 		  'www.virkeligband.no': 'Virkelig',
 		  'www.deathbyungabunga.no': 'Death By Unga Bunga',
@@ -30,7 +30,7 @@ class App extends Component {
       		<title>{artist}</title>
       		<link rel="stylesheet" href={`/styles/${artistLower}.css`} />
       	</Helmet>
-        <FrontNav />
+        <FrontNav artist={artist} />
         <Routes artist={artist} />
       </div>
     );
