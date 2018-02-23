@@ -45,10 +45,16 @@ class Home extends Component {
   render() {
 
     const artist = this.state.artist;
-    const releases = this.state.releases;
+    let releases = this.state.releases;
 
     if (!artist) {
       return <h4>Loading ...</h4>
+    }
+
+    if (releases) {
+      releases.sort((a, b) => {
+        return new Date(b.releaseDate) - new Date(a.releaseDate);
+      });
     }
 
     const masonryOptions = {
